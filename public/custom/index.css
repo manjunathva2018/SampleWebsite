@@ -1,0 +1,9 @@
+.active{
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.footer{
+    color: white;
+    padding: 2px;
+}

@@ -1,0 +1,36 @@
+.div-center{
+    margin-left: 35vw;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .div-center{
+        margin-left: 0px;
+    }
+    }
+    
+    /* Smartphones (landscape) ----------- */
+    /*@media only screen and (min-width : 321px) {
+        .div-center{
+            margin-left: 0px;
+        }
+    }*/
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 320px) {
+        .div-center{
+            margin-left: 0px;
+        }
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+        .div-center{
+            margin-left: 0px;
+        }
+        }
+        
+    /* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .div-center{
+        margin-left: 35vw;
+    }
+    }

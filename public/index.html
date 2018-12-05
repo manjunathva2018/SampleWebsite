@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Aroha</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="custom/index.css"/>
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css"/>
+
+  <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/tooltip.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./assets/js/angular.min.js"></script>
+  <script type="text/javascript" src="./assets/js/angular-route.js"></script>
+  <script type="text/javascript" src="./assets/js/angular-ui-router.min.js"></script>
+
+</head>
+<body ng-app="index" ng-controller="indexCtrl">
+    <div>
+        <img src="/images/logo.png" height="70" width="180">
+            <nav class="navbar navbar-expand-md bg-success navbar-dark ">
+                    <a class="navbar-brand" href="#">Aroha</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                      <ul class="navbar-nav">
+                        <li ui-sref-active="active" class="nav-item">
+                          <a class="nav-link"  ui-sref="home"  ng-click="activateState('home')">Home</a>
+                        </li>
+                       
+                        <li class="nav-item dropdown" ng-click="activateState('product')" ui-sref-active="active">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Products
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" ui-sref="product">Product 1</a>
+                            <a class="dropdown-item" href="#">Product 2</a>
+                            <a class="dropdown-item" href="#">Product 3</a>
+                          </div>
+                        </li>
+                        <li ui-sref-active="active" class="nav-item">
+                          <a class="nav-link"  ui-sref="contact"  ng-click="activateState('contact')">Contact Us</a>
+                        </li>    
+                      </ul>
+                    </div>  
+                  </nav>
+    </div>
+   
+      <br>
+<div class="container-fluid">
+    <div ui-view></div>
+         
+</div>
+<footer class="bg-success footer">
+  <p class="text-center">&copy; 2018 All rights reserved. </p>
+</footer>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./controllers/Home.js"></script>
+<script type="text/javascript" src="./controllers/Product.js"></script>
+<script type="text/javascript" src="./controllers/Contact.js"></script>
+</body>
+</html>
